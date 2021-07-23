@@ -215,6 +215,7 @@ function clearcontent() {
   isArray=false;
   arr=[];
   console.log("Div Cleared");
-  $('#sortingVisual').empty();
+  document.getElementById("sortingVisual").innerHTML = "";
+//  $('#sortingVisual').empty();
  //   document.getElementById(sortingVisual).innerHTML = "<div></div>";
 }
