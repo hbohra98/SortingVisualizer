@@ -1,5 +1,5 @@
 let arr = [];
-const n = 50;
+const n = 25;
 let isArray = false;
 let isSortingGoingOn = false;
 document.getElementById("array").addEventListener("click", NewArray);
@@ -21,7 +21,7 @@ function NewArray() {
   arr=[];
   isArray=true;
   isSortingGoingOn=false;
-  for (let i = 0; i < 50; i++) {
+  for (let i = 0; i < 25; i++) {
     arr.push(Math.floor(Math.random() * 40));
     var bar = document.createElement("div");
     bar.classList.add("bar");
