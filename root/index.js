@@ -43,7 +43,7 @@ function NewArray() {
 
 //sleep element
 function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, 100));
+  return new Promise(resolve => setTimeout(resolve, 150));
 }
 
 function swap(arr, i, j) {
