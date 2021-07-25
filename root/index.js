@@ -43,7 +43,7 @@ function NewArray() {
 
 //sleep element
 function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
+  return new Promise(resolve => setTimeout(resolve, 100));
 }
 
 function swap(arr, i, j) {
@@ -121,6 +121,7 @@ async function bubblesort() {
       document.getElementById("Bar" + j).style.color = "blue";
       document.getElementById("Bar" + (j + 1)).style.color = "blue";
     }
+      document.getElementById("Bar" + (n- i - 1)).style.color = "orange";
   }
   console.log(arr);
   isSortingGoingOn=false;
@@ -158,7 +159,10 @@ async function selectionsort(){
     await sleep(300);
     document.getElementById("Bar" + i).style.color = "blue";
     document.getElementById("Bar" + mini_ind).style.color = "blue";
+    document.getElementById("Bar" + i).style.color = "orange";
+
   }
+  document.getElementById("Bar" + (n-1)).style.color = "orange";
   console.log(arr);
   isSortingGoingOn=false;
 }
